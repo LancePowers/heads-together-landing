@@ -1,0 +1,131 @@
+<div layout="row" class="top-menu">
+    <img src="/landing/landing.img/logo.svg" flex="15" />
+    <div flex></div>
+    <md-button ng-repeat="item in vm.menuItems" ng-href="item.href" class="menu-item">{{item.display}}</md-button>
+    <md-button ng-href="vm.menuCTA.href" class="menu-cta">{{vm.menuCTA.display}}</md-button>
+</div>
+
+
+<div layout="row" class="row-one">
+    <div class="phone-display" flex="30" flex-offset="15">
+        <img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector.svg" />
+        <img class="orderly-mobile-dashboard" src="/landing/landing.img/orderly-mobile-dashboard.svg" />
+    </div>
+    <div flex="45" layout="column">
+        <div flex="30"></div>
+        <div flex="25">
+            <h1>My health. <span class="accent-header">Managed</span></h1>
+            <p> With Orderly you can find out total spending on healthcare for you and your family in seconds. No more guessing at your deductible amount or account balance. Budget for future expenses, and watch the savings pile up.</p>
+        </div>
+        <div flex></div>
+    </div>
+    <div flex="10"></div>
+</div>
+
+
+<div layout="row" class="row-two">
+    <div class="mac-display" flex="65">
+        <img flex class="macbook-pro" src="/landing/landing.img/macbook-pro.svg" />
+        <img flex class="orderly-dashboard" src="/landing/landing.img/orderly-dashboard-v-2.svg" />
+    </div>
+    <div flex="25" layout="column">
+        <div flex="30"></div>
+        <div flex="25">
+            <h1>My health. <span class="accent-header">Simplified</span></h1>
+            <p> Healthcare is complicated. It doesn’t have to be. Sign up for Orderly for a summary view of all your claims, doctors, and medications in one place. We work hard to make this easy.</p>
+        </div>
+        <div flex></div>
+    </div>
+    <div flex="10"></div>
+</div>
+
+<div layout="column" layout-align="center center" class="row-three">
+    <div flex="5"></div>
+    <h1 flex="10" class="main-header">My health.<span class="accent-header">Enhanced</span></h1>
+    <p flex="5" class="subtitle">Receive alerts when you’re running out of time to use your FSA, reminding you to refill your prescriptions, or identifying opportunities to save money on products you buy regularly.</p>
+    <div flex="65" layout="row">
+        <div flex="15"></div>
+        <div flex="15" layout="column">
+            <div flex="20"></div>
+            <h4>Never miss an exam</h4>
+            <p>Forgotten check-ups and exams are a thing of the paste.</p>
+            <div flex="15"></div>
+            <h4>Discover new ways to stay healthy</h4>
+            <p>Find activities and providers you didn't even know your insurance covered.</p>
+        </div>
+        <div flex="30">
+            <img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector.svg" />
+            <img class="orderly-mobile-dashboard" src="/landing/landing.img/orderly-mobile-dashboard.svg" />
+        </div>
+        <div flex="15" layout="column">
+            <div flex="45"></div>
+            <h4>Discover new ways to stay healthy</h4>
+            <p>Find activities and providers you didn't even know your insurance covered.</p>
+        </div>
+    </div>
+    <md-button class="cta">SIGN UP FREE</md-button>
+</div>
+
+<div layout="row" class="row-four">
+    <div flex="65"></div>
+    <div flex="25" layout="column">
+        <div flex="30"></div>
+        <div flex="25">
+            <h1>My health.</h1>
+            <h1 class="accent-header">My future</h1>
+            <p> Need content.</p>
+        </div>
+        <div flex></div>
+    </div>
+    <div flex="10"></div>
+</div>
+<div layout="row" layout-align="center center">
+    <div layout="column" flex="30">
+        <md-input-container>
+            <label>Name</label>
+            <input ng-model="vm.contact.name" type="email">
+        </md-input-container>
+        <md-input-container>
+            <label>Email</label>
+            <input ng-model="vm.contact.email" type="email">
+        </md-input-container>
+        <md-input-container>
+            <label>Share your thoughts</label>
+            <input ng-model="vm.contact.message" type="email">
+        </md-input-container>
+    </div>
+    <div layout="column" flex="30">
+        <md-list>
+            <md-list-item>
+                <md-icon md-svg-icon="communication:phone"></md-icon>
+                <div class="md-list-item-text">
+                    <h3>Denver, CO</h3>
+                </div>
+            </md-list-item>
+            <md-list-item>
+                <md-icon md-svg-icon="communication:phone"></md-icon>
+                <div class="md-list-item-text">
+                    <h3>(720) 772 - 8310</h3>
+                </div>
+            </md-list-item>
+            <md-list-item>
+                <md-icon md-svg-icon="communication:phone"></md-icon>
+                <div class="md-list-item-text">
+                    <h3>info@orderlyhealth.com</h3>
+                </div>
+            </md-list-item>
+            <md-list-item>
+                <md-icon md-svg-icon="communication:phone"></md-icon>
+                <div class="md-list-item-text">
+                    <h3>(720) 772 - 8310</h3>
+                </div>
+            </md-list-item>
+        </md-list>
+    </div>
+</div>
+<div layout="column" class="top-menu">
+    <img src="/landing/landing.img/logo.svg" />
+    <div layout="row">
+        <md-button ng-repeat="item in vm.menuItems" ng-href="item.href" class="menu-item">{{item.display}}</md-button>
+    </div>
+</div>

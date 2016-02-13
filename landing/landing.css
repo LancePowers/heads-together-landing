@@ -1,0 +1,175 @@
+h1 {
+    font-size: 80px;
+    font-face: OpenSans-Light;
+    font-weight: 100;
+    letter-spacing: -4.2px;
+    color: #6d6e71;
+    margin-bottom: 0px
+}
+
+p {
+    font-size: 22px;
+    font-face: OpenSans-Light;
+    font-weight: 100;
+    line-height: 26px;
+    color: #4a4a4a;
+    color: var(--greyish-brown);
+}
+
+.accent-header {
+    font-weight: 600;
+}
+
+row-one,
+row-two,
+row-three,
+row-four {
+    width: 1920px;
+}
+
+.i-phone-6-white-gold-vector {
+    position: absolute;
+}
+
+.top-menu {
+    height: 40px;
+    margin: 30px 40px;
+}
+
+.menu-item {
+    width: 62px;
+    height: 19px;
+    font-size: 14px;
+    font-face: OpenSans;
+    color: #4a4a4a;
+    color: var(--greyish-brown);
+    padding: 5px;
+    margin: 0px;
+}
+
+.menu-cta {
+    margin: 0px;
+    padding-top: 5px;
+    width: 139px;
+    height: 46px;
+    border-radius: 100px;
+    background-color: #44a7f0;
+    background-color: var(--dark-sky-blue);
+}
+
+.menu-cta span {
+    width: 90px;
+    height: 19px;
+    font-size: 14px;
+    font-face: OpenSans;
+    color: #ffffff;
+    padding-top: 15px;
+}
+
+.row-one {
+    height: 800px;
+}
+
+.row-one .i-phone-6-white-gold-vector {
+    width: 425px;
+    height: 790px;
+    position: absolute;
+    opacity: 1;
+}
+
+.row-one .orderly-mobile-dashboard {
+    margin-top: 100px;
+    margin-left: 50px;
+    opacity: 1;
+}
+
+.row-one .accent-header {
+    color: #44a7f0;
+}
+
+.row-one p {
+    max-width: 500px;
+}
+
+.row-two {
+    height: 950px;
+    background-color: #fb8e31;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.row-two .macbook-pro {
+    position: absolute;
+}
+
+.row-two .orderly-dashboard {
+    margin-top: 48px;
+    margin-left: 190px;
+}
+
+.row-two h1,
+.row-two p,
+.row-four h1,
+.row-four p {
+    color: #fff;
+}
+
+.row-two .accent-header {
+    letter-spacing: -2px;
+    margin-top: 0px;
+}
+
+.row-three {
+    height: 1900px;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.row-three .i-phone-6-white-gold-vector {
+    width: 668.2px;
+    height: 1246.7px;
+    margin: 0px;
+}
+
+.row-three .subtitle {
+    width: 549.8px;
+    height: 78px;
+    font-size: 18px;
+    font-face: OpenSans-Light;
+    text-align: center;
+    line-height: 26px;
+    color: #4a4a4a;
+    color: var(--greyish-brown);
+}
+
+.row-three .main-header {
+    width: 977px;
+    height: 126px;
+    font-size: 93px;
+    font-face: OpenSans-Light;
+    letter-spacing: -2.6px;
+    color: #6d6e71;
+    color: var(--slate-grey);
+}
+
+.row-three .cta {
+    margin: 0px;
+    padding-top: 5px;
+    width: 139px;
+    height: 46px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #44a7f0;
+    background-color: var(--dark-sky-blue);
+}
+
+.row-four {
+    width: 1920px;
+    height: 933px;
+    background-color: #19a69b;
+    background-color: var(--bluegreen);
+}
+
+.row-four .accent-header {
+    margin-top: 0px;
+}

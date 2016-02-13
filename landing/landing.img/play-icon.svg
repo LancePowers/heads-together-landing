@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="39px" viewBox="0 0 38 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Play Icon</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Retina" sketch:type="MSArtboardGroup" transform="translate(-903.000000, -570.000000)" stroke="#41A2EF" stroke-width="2">
+            <g id="My-Health-Managed-Section" sketch:type="MSLayerGroup" transform="translate(204.000000, 104.000000)">
+                <g id="Play-Icon" transform="translate(700.000000, 467.000000)" sketch:type="MSShapeGroup">
+                    <path d="M35.8043236,18.1893391 C35.8043236,28.1781568 27.7890695,36.2759657 17.9020849,36.2759657 C8.01510019,36.2759657 -0.00015388303,28.1781568 -0.00015388303,18.1893391 C-0.00015388303,8.20052138 8.01510019,0.102712512 17.9020849,0.102712512 C27.7890695,0.102712512 35.8043236,8.20052138 35.8043236,18.1893391 L35.8043236,18.1893391 Z" id="Stroke-1"></path>
+                    <path d="M14.1365158,26.1479005 L14.1365158,10.2305704 L27.7761946,18.1894946 L14.1365158,26.1479005 L14.1365158,26.1479005 Z" id="Stroke-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
