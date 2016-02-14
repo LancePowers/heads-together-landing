@@ -63,7 +63,7 @@
                 "color": "#fb8e31"
             },
             ctaColor: {
-                "background-color": "#fb8e31 !important"
+                "background-color": "#fb8e31"
             }
         }, {
             index: 2,
@@ -73,7 +73,7 @@
                 "color": "#19a69b"
             },
             ctaColor: {
-                "background-color": "##19a69b"
+                "background-color": "#19a69b"
             }
         }]
 

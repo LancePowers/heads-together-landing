@@ -1,21 +1,24 @@
 body {
     z-index: 0;
+    font-family: OpenSans;
 }
 
 h1 {
-    font-size: 92px;
-    font-face: OpenSans-Light;
-    font-weight: lighter;
+    width: 276px;
+    height: 128px;
+    font-size: 61.6px;
+    font-weight: 300;
     letter-spacing: -4.2px;
+    line-height: 64px;
     color: #6d6e71;
+    color: var(--slate-grey);
     margin-bottom: 0px
 }
 
 p {
-    font-size: 22px;
-    font-face: OpenSans-Light;
+    font-size: 12px;
     font-weight: 100;
-    line-height: 26px;
+    line-height: 22px;
     color: #4a4a4a;
     color: var(--greyish-brown);
 }
@@ -28,7 +31,6 @@ row-one,
 row-two,
 row-three,
 row-four {
-    width: 1920px;
     background-color: white;
 }
 
@@ -37,15 +39,12 @@ row-four {
 }
 
 .top-menu {
-    height: 40px;
+    height: 30px;
     margin: 30px 40px;
 }
 
 .menu-item {
-    width: 62px;
-    height: 19px;
-    font-size: 14px;
-    font-face: OpenSans;
+    font-size: 10px;
     color: #4a4a4a;
     color: var(--greyish-brown);
     padding: 5px;
@@ -55,7 +54,7 @@ row-four {
 .menu-cta {
     margin: 0px;
     padding-top: 5px;
-    width: 139px;
+    width: 146px;
     height: 46px;
     border-radius: 100px;
     background-color: #44a7f0;
@@ -65,8 +64,7 @@ row-four {
 .menu-cta span {
     width: 90px;
     height: 19px;
-    font-size: 14px;
-    font-face: OpenSans;
+    font-size: 10px;
     color: #ffffff;
     padding-top: 15px;
 }
@@ -78,8 +76,8 @@ row-four {
 .row-one .wrap {}
 
 .row-one .i-phone-6-white-gold-vector {
-    width: 425px;
-    height: 790px;
+    width: 263px;
+    height: 493.6px;
     position: absolute;
     opacity: 1;
 }
@@ -203,11 +201,12 @@ row-four {
 }
 
 .cta-square {
-    width: 259px;
-    height: 74px;
-    font-size: 27px;
-    letter-spacing: -1px;
+    width: 173.6px;
+    height: 49.6px;
     color: #ffffff !important;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
 }
 
 .slide-text {
