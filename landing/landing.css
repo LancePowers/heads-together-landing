@@ -1,7 +1,11 @@
+body {
+    z-index: 0;
+}
+
 h1 {
-    font-size: 80px;
+    font-size: 92px;
     font-face: OpenSans-Light;
-    font-weight: 100;
+    font-weight: lighter;
     letter-spacing: -4.2px;
     color: #6d6e71;
     margin-bottom: 0px
@@ -25,6 +29,7 @@ row-two,
 row-three,
 row-four {
     width: 1920px;
+    background-color: white;
 }
 
 .i-phone-6-white-gold-vector {
@@ -67,8 +72,10 @@ row-four {
 }
 
 .row-one {
-    height: 800px;
+    height: 1100px;
 }
+
+.row-one .wrap {}
 
 .row-one .i-phone-6-white-gold-vector {
     width: 425px;
@@ -88,23 +95,7 @@ row-four {
 }
 
 .row-one p {
-    max-width: 500px;
-}
-
-.row-two {
-    height: 950px;
-    background-color: #fb8e31;
-    padding-top: 200px;
-    padding-left: 100px;
-}
-
-.row-two .macbook-pro {
-    position: absolute;
-}
-
-.row-two .orderly-dashboard {
-    margin-top: 48px;
-    margin-left: 190px;
+    max-width: 600px;
 }
 
 .row-two h1,
@@ -114,9 +105,46 @@ row-four {
     color: #fff;
 }
 
+.parallax-wrap {
+    position: relative
+}
+
+.row-two {
+    position: absolute;
+    z-index: 1;
+    height: 950px;
+}
+
+.row-two .macbook-pro {
+    position: absolute;
+}
+
+.row-two .mac-display img {
+    max-width: 300px
+}
+
+.row-two .orderly-dashboard {
+    margin-top: 48px;
+    margin-left: 190px;
+}
+
 .row-two .accent-header {
     letter-spacing: -2px;
     margin-top: 0px;
+}
+
+.parallax-one div {
+    background-color: #44a7f0;
+    opacity: .5;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.parallax {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-height: 1050px;
 }
 
 .row-three {
@@ -172,4 +200,16 @@ row-four {
 
 .row-four .accent-header {
     margin-top: 0px;
+}
+
+.cta-square {
+    width: 259px;
+    height: 74px;
+    font-size: 27px;
+    letter-spacing: -1px;
+    color: #ffffff !important;
+}
+
+.slide-text {
+    font-size: 18px;
 }
