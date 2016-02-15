@@ -94,19 +94,20 @@
         }
 
         vm.benefits = [{
-            icon: '',
-            name: 'Create Your Account',
-            //            text: ''
-        }, {
-            icon: '',
+            icon: '/landing/landing.img/create-account-icon.svg',
             name: 'Collect Your Data',
             //            text: ''
         }, {
-            icon: '',
-            name: 'Explore Your Data',
-            //Empower Your Decisions
+            icon: '/landing/landing.img/collect-icon.svg',
+            name: 'Explore Your Information',
+            //            text: ''
+        }, {
+            icon: '/landing/landing.img/explore-icon.svg',
+            name: 'Empower Your Decisions',
             //            text: ''
         }]
+
+        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.svg', '/landing/landing.img/b-v-s-d-logo.svg']
 
         $interval(play, 5000);
 

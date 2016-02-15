@@ -1,5 +1,5 @@
 body {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     z-index: 0;
 }
 
@@ -15,7 +15,7 @@ h1 {
 
 p {
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 22px;
     color: #4a4a4a;
     color: var(--greyish-brown);
@@ -66,12 +66,9 @@ landing-slider {
 
 .landing-slider {
     height: 580px;
-    margin-bottom: 25px;
     background-color: white;
     z-index: 1;
 }
-
-.landing-slider .wrap {}
 
 .landing-slider .i-phone-6-white-gold-vector {
     width: 263px;
@@ -98,8 +95,8 @@ landing-slider {
 .slider-nav {
     margin-top: 70px;
     margin-bottom: 0px;
-    height: 50px;
-    opacity: 0.7;
+    height: 25px;
+    opacity: 0.8;
     z-index: 1;
     background-color: white;
 }
@@ -116,8 +113,8 @@ landing-slider {
 }
 
 .nav-items .button span {
-    font-size: 22.5px;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 300;
     letter-spacing: 1px;
     color: #ffffff;
     opacity: 1;
@@ -126,23 +123,20 @@ landing-slider {
 .parallax-wrap {
     /*    position: relative;*/
     width: 100%;
-    height: 1050px;
+    height: 850px;
     z-index: 1;
 }
 
 .parallax {
-    margin-top: -25px;
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 1050px;
+    height: 950px;
 }
 
 .color-filter {
-    margin-top: -25px;
     width: 100%;
-    min-height: 1050px;
-    height: 950px;
+    height: 850px;
     background-color: #44a7f0;
     opacity: .7;
     position: absolute;
@@ -163,51 +157,58 @@ landing-slider {
 
 .mac-display {
     width: 100%;
-    height: 1050px;
+    height: 850px;
     z-index: 1;
 }
 
-.white-gradient h1 {
+.mac-display .wrap {
+    position: relative;
+}
+
+.mac-display .frame {
+    position: absolute;
+    width: 925px;
+    margin-top: -20px;
+    margin-left: -20px;
+    min-width: 720px;
+}
+
+.mac-display .screen {}
+
+.mac-display h1 {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-size: 72px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -2.3px;
     line-height: 30px;
     color: #ffffff;
 }
 
-.white-gradient h3 {
-    margin-bottom: 5px;
-    opacity: .7;
+.mac-display h3 {
+    margin-top: -10px;
+    margin-bottom: 10px;
     font-size: 30px;
-    font-weight: 100;
-    letter-spacing: 3px;
-    line-height: 49px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 40px;
     color: #ffffff;
 }
 
-.white-gradient h4 {}
-
-.white-gradient img {
-    width: 827.6px;
-    height: 508px;
-    z-index: 1;
-}
+.mac-display h4 {}
 
 .benefits {
-    /*    margin-top: 150px;*/
     z-index: 2;
     background-color: white;
+    padding-bottom: 50px;
 }
 
 .benefit {
-    margin: 50px;
-    z-index: 2
+    z-index: 2;
+    margin-top: 100px;
 }
 
 .benefits h3 {
-    width: 240.9px;
     height: 46.3px;
     font-size: 21.6px;
     font-weight: 600;
@@ -215,6 +216,27 @@ landing-slider {
     line-height: 60px;
     color: #6d6e71;
     color: var(--slate-grey);
+}
+
+.benefits p {
+    margin: 5px;
+}
+
+.partners {
+    height: 300px;
+}
+
+.partners > div {
+    z-index: 1;
+}
+
+.partners .foreground h3 {
+    margin-top: 50px;
+    font-size: 17.7px;
+    font-weight: bold;
+    letter-spacing: 5.3px;
+    line-height: 60px;
+    color: #ffffff;
 }
 
 .partners .parallax {
@@ -225,10 +247,23 @@ landing-slider {
 .partners .color-filter {
     background-color: #000;
     z-index: -1;
+    margin-top: -50px;
+}
+
+.partners img {
+    min-height: 60px;
+}
+
+.partners h3 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5.3px;
+    line-height: 60px;
+    color: #ffffff;
 }
 
 .team {
-    margin-top: 400px;
+    margin-top: 100px;
     background: white;
 }
 
@@ -255,10 +290,10 @@ landing-slider {
     margin-bottom: 0px;
 }
 
-.team md-divider {
+md-divider {
     width: 559.7px;
-    height: 1.5px;
-    border: solid 1px #d8d8d8;
+    height: .5px;
+    border: solid .2px #d8d8d8;
     margin-top: 0px;
     margin-bottom: 75px;
 }
@@ -295,7 +330,7 @@ landing-slider {
 
 .bio-button span {
     font-size: 13.4px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 25px;
     color: #9b9b9b;
 }

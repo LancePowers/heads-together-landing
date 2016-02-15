@@ -6,7 +6,7 @@
 </div>
 
 <div class="landing-slider" layout="column">
-    <div layout="row" class="wrap" ng-repeat="item in vm.scrollItems | limitTo:1">
+    <div layout="row" ng-repeat="item in vm.scrollItems | limitTo:1">
         <div class="phone-display" flex="30" flex-offset="20" layout-align="center center">
             <img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector.svg" />
             <img class="orderly-mobile-dashboard" ng-src="{{item.image}}" ng-class="vm.animatedClass" />
@@ -34,25 +34,38 @@
 </div>
 
 <div class="parallax-wrap">
-    <div class="mac-display white-gradient" layout="column" layout-align="start center">
+    <div class="mac-display white-gradient" layout="column" layout-align="center center">
         <h3>BENEFITS OF ORDERLY</h3>
         <h1 class="accent-header">How It works</h1>
-        <img src="/landing/landing.img/orderly-dashboard-v-2.png" />
+        <div class="wrap" layout="row" layout-align="start start">
+            <img class="frame" src="/landing/landing.img/thunderbolt.svg">
+            <img flex class="screen" src="/landing/landing.img/orderly-dashboard-v-2.png" />
+        </div>
     </div>
     <div class="color-filter"></div>
     <img src="/landing/landing.img/mountainColor.jpg" alt="" class="parallax" du-parallax y="vm.background" />
 </div>
 
 <div layout="row" class="benefits">
-    <div flex="33" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="center start">
-        <md-icon ng-src="benefit.icon"></md-icon>
+    <div flex></div>
+    <div flex="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="center center">
+        <img ng-src="{{benefit.icon}}">
         <h3>{{benefit.name}}</h3>
         <p>{{benefit.text || vm.lorem}}</p>
     </div>
+    <div flex></div>
 </div>
 <div class="partners">
+
     <div class="color-filter"></div>
     <img src="/landing/landing.img/flatirons.jpg" alt="" class="parallax" du-parallax y="vm.background" />
+    <div layout="column" layout-align="center center" class="foreground">
+        <h3>TRUSTED BY</h3>
+        <md-divider></md-divider>
+        <div layout="row" layout-align="center center">
+            <img flex="25" flex-offset="5" ng-repeat="partner in vm.partners" ng-src="{{partner}}">
+        </div>
+    </div>
 </div>
 
 <div layout="row" class="team dark-gradient">
