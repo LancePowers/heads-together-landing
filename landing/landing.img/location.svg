@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="24px" viewBox="0 0 18 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: sketchtool 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Location</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Retina---Simplified" sketch:type="MSArtboardGroup" transform="translate(-1121.000000, -4166.000000)" fill="#44A7F0">
+            <g id="Contact-Form" sketch:type="MSLayerGroup" transform="translate(562.000000, 4104.000000)">
+                <g id="Location" transform="translate(559.000000, 62.000000)" sketch:type="MSShapeGroup">
+                    <g id="Fill-1">
+                        <path d="M8.8272133,12.760099 C6.0746314,12.760099 3.84320829,10.5525446 3.84320829,7.82940594 C3.84320829,5.10626733 6.0746314,2.89871287 8.8272133,2.89871287 C11.5797952,2.89871287 13.8112183,5.10626733 13.8112183,7.82940594 C13.8112183,10.5525446 11.5797952,12.760099 8.8272133,12.760099 M8.8272133,0 C3.95207578,0 0,3.90980198 0,8.73279208 C0,12.3322574 4.91663086,19.7245545 7.41118542,23.2435545 C8.09987883,24.2150495 9.55454776,24.2150495 10.2432412,23.2435545 C12.7377957,19.7245545 17.6544266,12.3322574 17.6544266,8.73279208 C17.6544266,3.90980198 13.7023508,0 8.8272133,0"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

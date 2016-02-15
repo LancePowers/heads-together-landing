@@ -21,11 +21,16 @@
     }
 
 
-    LandingController.$inject = ['parallaxHelper', '$interval'];
+    LandingController.$inject = ['parallaxHelper', '$interval', 'team'];
 
-    function LandingController(parallaxHelper, $interval) {
+    function LandingController(parallaxHelper, $interval, team) {
         var vm = this;
         vm.index = 0;
+        vm.isPlaying = true;
+        vm.navItems = ['Simplified', 'Managed', 'Enhanced'];
+        vm.background = parallaxHelper.createAnimator(-0.3, '200px', '100px');
+        vm.pause = pause;
+        vm.teamMembers = team.teamMembers;
         vm.menuItems = [{
             display: 'features',
             href: ''
@@ -54,7 +59,8 @@
             },
             ctaColor: {
                 "background-color": "#44a7f0"
-            }
+            },
+            image: "/landing/landing.img/orderly-mobile-dashboard.png"
         }, {
             index: 1,
             title: 'Simplified.',
@@ -64,7 +70,8 @@
             },
             ctaColor: {
                 "background-color": "#fb8e31"
-            }
+            },
+            image: "/landing/landing.img/orderly-mobile-dashboard.png"
         }, {
             index: 2,
             title: 'Enhanced.',
@@ -74,23 +81,56 @@
             },
             ctaColor: {
                 "background-color": "#19a69b"
-            }
+            },
+            image: "/landing/landing.img/orderly-mobile-dashboard.png"
         }]
 
-        vm.background = parallaxHelper.createAnimator(-0.3);
+
 
         vm.contact = {
             name: 'Enter your name',
             email: 'email@address.com',
             message: 'What would you like to ask us?'
         }
-        $interval(changeDisplay, 3000);
 
-        function changeDisplay() {
-            var nextSlide = vm.scrollItems.shift();
-            vm.scrollItems.push(nextSlide);
-            console.log(vm.scrollItems)
+        vm.benefits = [{
+            icon: '',
+            name: 'Create Your Account',
+            //            text: ''
+        }, {
+            icon: '',
+            name: 'Collect Your Data',
+            //            text: ''
+        }, {
+            icon: '',
+            name: 'Explore Your Data',
+            //Empower Your Decisions
+            //            text: ''
+        }]
+
+        $interval(play, 5000);
+
+        function pause(title) {
+            console.log(title)
+            vm.isPlaying = false;
+            vm.scrollItems.forEach(function (item) {
+                console.log(item.title === title + '.')
+                if (item.title === title + '.') {
+
+                    vm.scrollItems.unshift(item);
+                }
+            })
         }
+
+        function play() {
+            console.log(vm.isPlaying)
+            if (vm.isPlaying) {
+                var nextSlide = vm.scrollItems.shift();
+                vm.scrollItems.push(nextSlide);
+            }
+        }
+
+        vm.lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac posuere elit. Mauris pharetra lacus nec nisi tincidunt tincidunt. Proin arcu risus, semper sed tempus ut, efficitur eu est. Suspendisse sed nisl arcu. Aliquam et urna eget tellus ultrices lobortis quis in ipsum. Morbi consequat orci tortor, quis auctor arcu."
     }
 
 })();
