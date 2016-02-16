@@ -107,7 +107,21 @@
             //            text: ''
         }]
 
-        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.svg', '/landing/landing.img/b-v-s-d-logo.svg']
+        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.svg', '/landing/landing.img/b-v-s-d-logo.svg'];
+
+        vm.contactInfo = [{
+            value: 'Denver, CO',
+            icon: '/landing/landing.img/location.svg'
+        }, {
+            value: '(720) 772 - 8310',
+            icon: '/landing/landing.img/phone.svg'
+        }, {
+            value: 'info@orderlyhealth.com',
+            icon: '/landing/landing.img/mail.svg'
+        }, {
+            value: '@orderlyhealth',
+            icon: '/landing/landing.img/twitter.svg'
+        }]
 
         $interval(play, 5000);
 

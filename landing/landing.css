@@ -338,10 +338,57 @@ md-divider {
 .contact {
     z-index: 2;
     background: white;
+    margin-bottom: 100px;
+    margin-top: 75px;
+}
+
+.contact h2 {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 22px;
+    color: #44a7f0;
+}
+
+.contact .info h2 {
+    margin-bottom: 0px;
+}
+
+.contact .info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    line-height: 22px;
+    color: #6d6e71;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.contact .menu-cta span {
+    font-size: 14px;
 }
 
 .footer-menu {
-    background: white;
+    padding-top: 50px;
+    background: #f1f1f1;
+    min-height: 400px;
+}
+
+.footer-menu .md-button {
+    margin-left: 0px;
+}
+
+.footer-menu .menu-cta {
+    width: 199px;
+    height: 50px;
+}
+
+.footer-menu .menu-cta span {
+    font-size: 18px;
+}
+
+.footer-menu .divider {
+    margin-left: 15px;
 }
 
 .cta-square {

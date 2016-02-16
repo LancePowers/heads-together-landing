@@ -85,8 +85,10 @@
     </div>
 </div>
 
-<div layout="row" layout-align="center center" class="contact">
-    <div layout="column" flex="30">
+<div layout="row" layout-align="center start" class="contact">
+    <div flex="5"></div>
+    <div layout="column" flex="25" class="message">
+        <h2>SEND US A MESSAGE</h2>
         <md-input-container>
             <label>Name</label>
             <input ng-model="vm.contact.name">
@@ -99,40 +101,32 @@
             <label>Share your thoughts</label>
             <input ng-model="vm.contact.message">
         </md-input-container>
+        <md-button class="menu-cta">Submit</md-button>
     </div>
-    <div layout="column" flex="30">
+    <div flex="10"></div>
+    <div layout="column" layout-align="center start" flex="25" class="info">
+        <h2>CONTACT INFO</h2>
         <md-list>
-            <md-list-item>
-                <md-icon></md-icon>
-                <div class="md-list-item-text">
-                    <h3>Denver, CO</h3>
-                </div>
-            </md-list-item>
-            <md-list-item>
-                <md-icon></md-icon>
-                <div class="md-list-item-text">
-                    <h3>(720) 772 - 8310</h3>
-                </div>
-            </md-list-item>
-            <md-list-item>
-                <!--               <md-icon md-svg-icon="communication:phone"></md-icon>-->
-                <div class="md-list-item-text">
-                    <h3>info@orderlyhealth.com</h3>
-                </div>
-            </md-list-item>
-            <md-list-item>
-                <md-icon></md-icon>
-                <div class="md-list-item-text">
-                    <h3>(720) 772 - 8310</h3>
-                </div>
+            <md-list-item ng-repeat="item in vm.contactInfo" layout-align="end end">
+                <img ng-src="{{item.icon}}">
+                <h3>{{item.value}}</h3>
+                <div flex></div>
             </md-list-item>
         </md-list>
     </div>
+    <div flex="5"></div>
 </div>
 
-<div layout="column" class="footer-menu">
-    <img src="/landing/landing.img/logo.svg" />
-    <div layout="row">
-        <md-button ng-repeat="item in vm.menuItems" ng-href="item.href" class="menu-item">{{item.display}}</md-button>
+<div layout="column" layout-align="center center" class="footer-menu">
+
+    <img src="/landing/landing.img/logo-2.svg" />
+    <div flex="15"></div>
+    <md-button class="menu-cta">SIGN UP FREE</md-button>
+    <div flex="10"></div>
+    <div layout="row" layout-align="center center">
+        <md-button ng-href="{{item.href}}">sign in<span class="divider">|</span></md-button>
+        <md-button ng-href="{{item.href}}">terms of service<span class="divider">|</span></md-button>
+        <md-button ng-href="{{item.href}}">privacy policy</md-button>
     </div>
+    <div></div>
 </div>
