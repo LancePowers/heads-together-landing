@@ -364,6 +364,10 @@ md-divider {
     margin-left: 10px;
 }
 
+md-dialog {
+    max-width: 400px;
+}
+
 .contact .menu-cta span {
     font-size: 14px;
 }
@@ -398,6 +402,7 @@ md-divider {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: -1px;
+    padding-top: 5px;
 }
 
 .slide-text {

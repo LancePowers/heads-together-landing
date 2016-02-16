@@ -21,34 +21,32 @@
     }
 
 
-    LandingController.$inject = ['parallaxHelper', '$interval', 'team'];
+    LandingController.$inject = ['parallaxHelper', '$interval', 'team', '$mdDialog'];
 
-    function LandingController(parallaxHelper, $interval, team) {
+    function LandingController(parallaxHelper, $interval, team, $mdDialog) {
         var vm = this;
         vm.index = 0;
+        vm.signUp = 'https://www.orderlyhealth.com/users/sign_up';
+        vm.signIn = 'https://www.orderlyhealth.com/users/sign_in';
         vm.isPlaying = true;
         vm.navItems = ['Simplified', 'Managed', 'Enhanced'];
         vm.background = parallaxHelper.createAnimator(-0.3, '200px', '100px');
         vm.pause = pause;
+        vm.dialog = dialog;
         vm.teamMembers = team.teamMembers;
         vm.menuItems = [{
-            display: 'features',
-            href: ''
+            display: 'about',
+            href: '#about'
         }, {
             display: 'contact',
-            href: ''
+            href: '#contact'
         }, {
             display: 'blog',
             href: ''
         }, {
             display: 'sign in',
-            href: ''
+            href: 'https://www.orderlyhealth.com/users/sign_in'
         }];
-
-        vm.menuCTA = {
-            display: 'sign up free',
-            href: ''
-        };
 
         vm.scrollItems = [{
             index: 0,
@@ -135,7 +133,21 @@
                     vm.scrollItems.unshift(item);
                 }
             })
-        }
+        };
+
+        function dialog(ev, title, content, ok) {
+            console.log(content);
+            console.log(vm.teamMembers);
+            $mdDialog.show(
+                $mdDialog.alert()
+                .clickOutsideToClose(true)
+                .title(title)
+                .textContent(content)
+                .ariaLabel('Alert Dialog')
+                .ok(ok)
+                .targetEvent(ev)
+            );
+        };
 
         function play() {
             console.log(vm.isPlaying)

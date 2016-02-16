@@ -1,8 +1,8 @@
 <div layout="row" class="top-menu" layout-align="center center">
     <img src="/landing/landing.img/logo.svg" flex="15" />
     <div flex></div>
-    <md-button ng-repeat="item in vm.menuItems" ng-href="item.href" class="menu-item">{{item.display}}</md-button>
-    <md-button ng-href="{{vm.menuCTA.href}}" class="menu-cta">{{vm.menuCTA.display}}</md-button>
+    <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
+    <md-button ng-href="{{vm.signUp}}" class="menu-cta">sign up free</md-button>
 </div>
 
 <div class="landing-slider" layout="column">
@@ -17,7 +17,7 @@
                 <h1>My health. <span class="accent-header" ng-class="vm.animatedClass" ng-style="item.color">{{item.title}}</span></h1>
                 <p class="slide-text" ng-class="vm.animatedClass">{{item.text}}</p>
             </div>
-            <md-button class="cta-square" ng-style="item.ctaColor">SIGN UP FREE</md-button>
+            <md-button class="cta-square" ng-style="item.ctaColor" ng-href="{{vm.signUp}}">SIGN UP FREE</md-button>
             <div flex></div>
         </div>
         <div flex="10"></div>
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div class="parallax-wrap">
+<div class="parallax-wrap" id="features">
     <div class="mac-display white-gradient" layout="column" layout-align="center center">
         <h3>BENEFITS OF ORDERLY</h3>
         <h1 class="accent-header">How It works</h1>
@@ -56,7 +56,6 @@
     <div flex></div>
 </div>
 <div class="partners">
-
     <div class="color-filter"></div>
     <img src="/landing/landing.img/flatirons.jpg" alt="" class="parallax" du-parallax y="vm.background" />
     <div layout="column" layout-align="center center" class="foreground">
@@ -68,7 +67,7 @@
     </div>
 </div>
 
-<div layout="row" class="team dark-gradient">
+<div layout="row" class="team dark-gradient" id="about">
     <div layout="column" layout-align="center center">
         <h3>About Orderly</h3>
         <md-divider></md-divider>
@@ -78,14 +77,14 @@
                 <img ng-src="{{member.image}}">
                 <h4>{{member.name}}</h4>
                 <p>{{member.title}}</p>
-                <md-button class="bio-button">READ BIO</md-button>
+                <md-button class="bio-button" ng-click="vm.dialog($event, member.name, member.bio,'close')">READ BIO</md-button>
             </div>
             <div flex="10"></div>
         </div>
     </div>
 </div>
 
-<div layout="row" layout-align="center start" class="contact">
+<div layout="row" layout-align="center start" class="contact" id="contact">
     <div flex="5"></div>
     <div layout="column" flex="25" class="message">
         <h2>SEND US A MESSAGE</h2>
@@ -121,12 +120,12 @@
 
     <img src="/landing/landing.img/logo-2.svg" />
     <div flex="15"></div>
-    <md-button class="menu-cta">SIGN UP FREE</md-button>
+    <md-button class="menu-cta" ng-href="{{vm.signUp}}">SIGN UP FREE</md-button>
     <div flex="10"></div>
     <div layout="row" layout-align="center center">
-        <md-button ng-href="{{item.href}}">sign in<span class="divider">|</span></md-button>
-        <md-button ng-href="{{item.href}}">terms of service<span class="divider">|</span></md-button>
-        <md-button ng-href="{{item.href}}">privacy policy</md-button>
+        <md-button ng-href="{{vm.signIn}}">sign in<span class="divider">|</span></md-button>
+        <md-button ng-href="https://www.orderlyhealth.com/legal">terms of service<span class="divider">|</span></md-button>
+        <md-button ng-href="https://www.orderlyhealth.com/privacy">privacy policy</md-button>
     </div>
     <div></div>
 </div>
