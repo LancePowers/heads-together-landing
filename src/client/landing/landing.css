@@ -25,10 +25,6 @@ p {
     font-weight: 600;
 }
 
-landing-slider {
-    background-color: white;
-}
-
 .i-phone-6-white-gold-vector {
     position: absolute;
 }
@@ -62,6 +58,30 @@ landing-slider {
     font-size: 12px;
     color: #ffffff;
     padding-top: 15px;
+}
+
+.scroll-menu {
+    position: fixed;
+    z-index: 4;
+}
+
+.scroll-menu,
+.md-fab,
+.fab-trigger * {
+    background-color: transparent !important;
+}
+
+.scroll-menu .menu-cta {
+    background-color: #58595b;
+}
+
+.scroll-menu .menu-item span {
+    color: #9b9b9b;
+}
+
+.md-toolbar-tools {
+    background-color: #f1f1f1;
+    width: 100%;
 }
 
 .landing-slider {
@@ -176,7 +196,7 @@ landing-slider {
 .mac-display .screen {}
 
 .mac-display h1 {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 100px;
     font-size: 72px;
     font-weight: 600;
@@ -185,6 +205,8 @@ landing-slider {
     color: #ffffff;
 }
 
+
+/*
 .mac-display h3 {
     margin-top: -10px;
     margin-bottom: 10px;
@@ -194,8 +216,7 @@ landing-slider {
     line-height: 40px;
     color: #ffffff;
 }
-
-.mac-display h4 {}
+*/
 
 .benefits {
     z-index: 2;
@@ -407,4 +428,10 @@ md-dialog {
 
 .slide-text {
     font-size: 18px;
+}
+
+.copyright {
+    font-size: 9px;
+    font-weight: 600;
+    color: #c8c8c8;
 }

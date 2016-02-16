@@ -11,10 +11,10 @@
             title: 'co-founder / ceo',
             bio: "Kevin left his role as the Senior Product Manager for Electronic Arts' digital platform team to help found Orderly. Prior to EA, Kevin was working as a Product Manager at a mobile analytics startup called Upsight in San Francisco. His clients included Glu Mobile, Tinder, JackThreads, and Kaiser Permanente. His interest in healthcare dates back to early childhood memories making rounds with his dad, at the time a physician in Denver. Originally enrolled in the “PreMed” program at Duke, Kevin shifted his focus to the business of healthcare, choosing to focus instead on healthcare policy as a Public Policy  / Economics major. When he’s not in the office you can find Kevin skiing, rock climbing, running, usually while listening to podcasts on healthcare and technology, preferably in the mountains of Colorado."
         }, {
-            name: 'James Dickhoner',
+            name: 'James Dickhoner MD',
             image: '/landing/landing.img/James_Dickhoner.jpg',
-            title: 'co-founder / MD',
-            bio: 'His primary responsibilities at Orderly include managing the day to day operations, overseeing development and working with healthcare data. He also works closely with Kevin to assist in fundraising and business development. Prior to Orderly, James completed medical school where he worked as a researcher in the departments of medical informatics and emergency medicine at Cincinnati Children’s Hospital. Additionally, he completed the Stanford Ignite program at the Graduate School of Business in the summer of 2015. In his previous life, he worked as a ski patroller in Tahoe. Besides obsessively thinking about how to access healthcare, he spends his free time fly fishing, skiing, and working his way through the art of french cooking.'
+            title: 'co-founder',
+            bio: 'His primary responsibilities at Orderly include managing the day to day operations, overseeing development and working with healthcare data. He also works closely with Kevin to assist in fundraising and business development. Prior to Orderly, James completed medical school where he worked as a researcher in the departments of medical informatics and emergency medicine at Cincinnati Children’s Hospital. Additionally, he completed the Stanford Ignite program at the Graduate School of Business in the summer of 2015. In his previous life, he worked as a ski patroller in Tahoe. Besides obsessively thinking about how to access healthcare, he spends his free time fly fishing, skiing, and working his way through "The Art of French Cooking".'
         }, {
             name: 'Paul Lungu',
             image: '/landing/landing.img/Paul_Lungu.jpg',

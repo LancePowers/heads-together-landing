@@ -21,19 +21,22 @@
     }
 
 
-    LandingController.$inject = ['parallaxHelper', '$interval', 'team', '$mdDialog'];
+    LandingController.$inject = ['$scope', 'parallaxHelper', '$interval', 'team', '$mdDialog', '$window'];
 
-    function LandingController(parallaxHelper, $interval, team, $mdDialog) {
+    function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window) {
         var vm = this;
         vm.index = 0;
         vm.signUp = 'https://www.orderlyhealth.com/users/sign_up';
         vm.signIn = 'https://www.orderlyhealth.com/users/sign_in';
         vm.isPlaying = true;
+        vm.isOpenMenu = false;
         vm.navItems = ['Simplified', 'Managed', 'Enhanced'];
         vm.background = parallaxHelper.createAnimator(-0.3, '200px', '100px');
         vm.pause = pause;
         vm.dialog = dialog;
         vm.teamMembers = team.teamMembers;
+        vm.isScrolled = false;
+        scrollMenu();
         vm.menuItems = [{
             display: 'about',
             href: '#about'
@@ -134,6 +137,18 @@
                 }
             })
         };
+
+        function scrollMenu() {
+            angular.element($window).bind("scroll", function () {
+                if (this.pageYOffset >= 100) {
+                    vm.isScrolled = true;
+                    console.log(vm.isScrolled)
+                } else {
+                    vm.isScrolled = false;
+                }
+                $scope.$apply();
+            });
+        }
 
         function dialog(ev, title, content, ok) {
             console.log(content);

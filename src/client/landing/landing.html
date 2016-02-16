@@ -1,3 +1,19 @@
+<md-fab-toolbar class="scroll-menu" md-open="vm.isOpenMenu" ng-show="vm.isScrolled">
+    <md-fab-trigger class="fab-trigger">
+        <md-button aria-label="menu" class="md-fab">
+            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
+        </md-button>
+    </md-fab-trigger>
+    <md-toolbar>
+        <md-fab-actions ng-class="{'md-toolbar-tools': vm.isOpenMenu}">
+            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
+            <div flex></div>
+            <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
+            <md-button ng-href="{{vm.signUp}}" class="menu-cta">sign up free</md-button>
+        </md-fab-actions>
+    </md-toolbar>
+</md-fab-toolbar>
+
 <div layout="row" class="top-menu" layout-align="center center">
     <img src="/landing/landing.img/logo.svg" flex="15" />
     <div flex></div>
@@ -8,7 +24,7 @@
 <div class="landing-slider" layout="column">
     <div layout="row" ng-repeat="item in vm.scrollItems | limitTo:1">
         <div class="phone-display" flex="30" flex-offset="20" layout-align="center center">
-            <img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector.svg" />
+            <img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector@2x.png" />
             <img class="orderly-mobile-dashboard" ng-src="{{item.image}}" ng-class="vm.animatedClass" />
         </div>
         <div flex="45" layout="column">
@@ -35,10 +51,9 @@
 
 <div class="parallax-wrap" id="features">
     <div class="mac-display white-gradient" layout="column" layout-align="center center">
-        <h3>BENEFITS OF ORDERLY</h3>
         <h1 class="accent-header">How It works</h1>
         <div class="wrap" layout="row" layout-align="start start">
-            <img class="frame" src="/landing/landing.img/thunderbolt.svg">
+            <img class="frame" src="/landing/landing.img/Thunderbolt@1x.png">
             <img flex class="screen" src="/landing/landing.img/orderly-dashboard-v-2.png" />
         </div>
     </div>
@@ -59,7 +74,7 @@
     <div class="color-filter"></div>
     <img src="/landing/landing.img/flatirons.jpg" alt="" class="parallax" du-parallax y="vm.background" />
     <div layout="column" layout-align="center center" class="foreground">
-        <h3>TRUSTED BY</h3>
+        <h3>WE WORK WITH THE BEST</h3>
         <md-divider></md-divider>
         <div layout="row" layout-align="center center">
             <img flex="25" flex-offset="5" ng-repeat="partner in vm.partners" ng-src="{{partner}}">
@@ -117,7 +132,6 @@
 </div>
 
 <div layout="column" layout-align="center center" class="footer-menu">
-
     <img src="/landing/landing.img/logo-2.svg" />
     <div flex="15"></div>
     <md-button class="menu-cta" ng-href="{{vm.signUp}}">SIGN UP FREE</md-button>
@@ -128,4 +142,6 @@
         <md-button ng-href="https://www.orderlyhealth.com/privacy">privacy policy</md-button>
     </div>
     <div></div>
+    <div class="copyright">© 2015 ORDERLY HEALTH, INC. | ALL RIGHTS RESERVED | MADE WITH ♡ IN COLORADO</div>
+    <div flex="5"></div>
 </div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Orderly Mark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="57.1743152%" y1="0%" x2="57.1743131%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#19A69B" offset="0%"></stop>
+            <stop stop-color="#10887C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="94.3614006%" y1="13.7154081%" x2="7.38710106%" y2="86.5145781%" id="linearGradient-2">
+            <stop stop-color="#44A7F0" offset="0%"></stop>
+            <stop stop-color="#2F8CEC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.3832108%" y1="12.8236372%" x2="94.0231838%" y2="84.8209184%" id="linearGradient-3">
+            <stop stop-color="#FB8E31" offset="0%"></stop>
+            <stop stop-color="#FB7725" offset="71.0176163%"></stop>
+            <stop stop-color="#FA6D21" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Dashboard" sketch:type="MSArtboardGroup" transform="translate(-334.000000, -41.000000)">
+            <g id="Orderly-Mark" sketch:type="MSLayerGroup" transform="translate(334.000000, 41.000000)">
+                <g id="Logo-Mark" sketch:type="MSShapeGroup">
+                    <path d="M8.13245648,0.23056535 C7.78746615,0.23056535 7.50909091,0.506066869 7.50909091,0.845762918 L7.50909091,0.845762918 L7.50909091,20.4555866 C7.50909091,20.7958176 7.78746615,21.0713191 8.13245648,21.0713191 L8.13245648,21.0713191 L12.2609671,21.0713191 C12.6054159,21.0713191 12.8843327,20.7958176 12.8843327,20.4555866 L12.8843327,20.4555866 L12.8843327,0.845762918 C12.8843327,0.506066869 12.6054159,0.23056535 12.2609671,0.23056535 L12.2609671,0.23056535 L8.13245648,0.23056535 Z" id="teal" fill="url(#linearGradient-1)"></path>
+                    <path d="M17.3237137,3.32848632 L0.302746615,13.4209362 C0.00758220503,13.5958663 -0.08827853,13.974614 0.0893617021,14.2656292 L0.0893617021,14.2656292 L2.21400387,17.7626261 C2.39110251,18.0536413 2.77400387,18.1488632 3.06916828,17.9733982 L3.06916828,17.9733982 L20.0901354,7.88041337 C20.3858414,7.70601824 20.4811605,7.32727052 20.3040619,7.03625532 L20.3040619,7.03625532 L18.1788781,3.53925836 C18.0618956,3.34720973 17.8555513,3.24021884 17.6437911,3.24021884 L17.6437911,3.24021884 C17.5349323,3.24021884 17.4239072,3.26857143 17.3237137,3.32848632" id="blue" fill="url(#linearGradient-2)"></path>
+                    <path d="M2.21400387,3.53925836 L0.0893617021,7.03625532 C-0.08827853,7.32727052 0.00758220503,7.70601824 0.302746615,7.88041337 L0.302746615,7.88041337 L17.3237137,17.9733982 C17.6188781,18.1488632 18.0017795,18.0536413 18.1788781,17.7626261 L18.1788781,17.7626261 L20.3040619,14.2656292 C20.4811605,13.974614 20.3858414,13.5958663 20.0901354,13.4209362 L20.0901354,13.4209362 L3.06916828,3.32848632 C2.96897485,3.26857143 2.8584913,3.24021884 2.74909091,3.24021884 L2.74909091,3.24021884 C2.53733075,3.24021884 2.33098646,3.34720973 2.21400387,3.53925836" id="orange" fill="url(#linearGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
