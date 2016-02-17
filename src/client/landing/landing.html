@@ -41,7 +41,7 @@
     <div layout="row" class="slider-nav">
         <md-toolbar layout-align="center center">
             <div class="nav-items">
-                <md-button ng-repeat="item in vm.navItems" class="button" aria-label="Settings" ng-click="vm.pause(item)">
+                <md-button ng-repeat="item in vm.navItems" class="button" ng-class="{'active': vm.isActive(item)}" aria-label="Settings" ng-click="vm.pause(item)">
                     {{item}}
                 </md-button>
             </div>

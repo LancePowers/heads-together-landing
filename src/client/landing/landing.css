@@ -63,6 +63,7 @@ p {
 .scroll-menu {
     position: fixed;
     z-index: 4;
+    padding-left: 50px;
 }
 
 .scroll-menu,
@@ -125,6 +126,10 @@ p {
     opacity: 0.7;
     background-color: #4a4a4a;
     margin-bottom: 0px;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.13) !important;
 }
 
 .nav-items .button {
