@@ -25,6 +25,9 @@
 
     function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window, landingContent, landingNav) {
         var vm = this;
+        analytics.track('Arrived on Page', {
+            referrer: document.referrer
+        })
         vm.index = 0;
         vm.signUp = 'https://www.orderlyhealth.com/users/sign_up';
         vm.signIn = 'https://www.orderlyhealth.com/users/sign_in';
@@ -49,7 +52,7 @@
             message: 'What would you like to ask us?'
         }
 
-        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.svg', '/landing/landing.img/b-v-s-d-logo.svg'];
+        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.png', '/landing/landing.img/b-v-s-d-logo.svg'];
 
         vm.contactInfo = team.contactInfo;
 
@@ -82,8 +85,9 @@
         }
 
         function dialog(ev, title, content, ok) {
-            console.log(content);
-            console.log(vm.teamMembers);
+            analytics.track('Read Bio', {
+                name: title
+            })
             $mdDialog.show(
                 $mdDialog.alert()
                 .clickOutsideToClose(true)
