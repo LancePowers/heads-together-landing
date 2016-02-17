@@ -192,7 +192,7 @@ p {
 
 .mac-display .frame {
     position: absolute;
-    width: 925px;
+    max-width: 925px;
     margin-top: -20px;
     margin-left: -20px;
     min-width: 720px;

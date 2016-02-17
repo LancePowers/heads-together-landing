@@ -33,7 +33,7 @@
         }, {
             name: 'Paul Lungu',
             image: '/landing/landing.img/Paul_Lungu.jpg',
-            title: 'CTO',
+            title: 'co-founder / technical lead',
             bio: 'Prior to joining Orderly, Paul was working on side project to create a cloud hosted peer to peer medical records and claims management system. He has 10+ years of experience building and supporting consumer facing applications for companies like Alfresco, the NBA, and the City and County of Denver. In his spare time Paul is restoring a VW bus, a proud father of two rambunctious kids and a regularly drops in for some old timer hockey.'
         }, {
             name: 'Lance Powers',

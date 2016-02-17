@@ -49,7 +49,7 @@
     </div>
 </div>
 
-<div class="parallax-wrap" id="features">
+<div hide-xs class="parallax-wrap" id="features">
     <div class="mac-display white-gradient" layout="column" layout-align="center center">
         <h1 class="accent-header">How It works</h1>
         <div class="wrap" layout="row" layout-align="start start">
@@ -61,7 +61,7 @@
     <img src="/landing/landing.img/mountainColor.jpg" alt="" class="parallax" du-parallax y="vm.background" />
 </div>
 
-<div layout="row" class="benefits">
+<div layout-xs="column" layout="row" class="benefits">
     <div flex></div>
     <div flex="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="center center">
         <img ng-src="{{benefit.icon}}">

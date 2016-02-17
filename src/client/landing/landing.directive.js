@@ -61,7 +61,6 @@
             vm.scrollItems.forEach(function (item) {
                 console.log(item.title === title + '.')
                 if (item.title === title + '.') {
-
                     vm.scrollItems.unshift(item);
                 }
             })
