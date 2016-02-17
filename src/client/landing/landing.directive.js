@@ -56,8 +56,11 @@
         $interval(play, 5000);
 
         function pause(title) {
-            console.log(title)
+            console.log($window)
             vm.isPlaying = false;
+            analytics.track('clicked slider', {
+                title: title
+            })
             vm.scrollItems.forEach(function (item) {
                 console.log(item.title === title + '.')
                 if (item.title === title + '.') {
