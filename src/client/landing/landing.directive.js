@@ -29,8 +29,8 @@
             referrer: document.referrer
         })
         vm.index = 0;
-        vm.signUp = 'https://www.orderlyhealth.com/users/sign_up';
-        vm.signIn = 'https://www.orderlyhealth.com/users/sign_in';
+        vm.signUp = 'https://welcome.orderlyhealth.com/users/sign_up';
+        vm.signIn = 'https://welcome.orderlyhealth.com/users/sign_in';
         vm.isPlaying = true;
         vm.isOpenMenu = false;
         vm.isScrolled = false;
