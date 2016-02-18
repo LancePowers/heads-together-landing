@@ -25,6 +25,8 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
+// *** api routes *** //
+app.use('/api', routes);
 
 // *** main routes *** //
 app.use('/', function (req, res) {

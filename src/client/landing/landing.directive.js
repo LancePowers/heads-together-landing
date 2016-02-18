@@ -21,9 +21,9 @@
     }
 
 
-    LandingController.$inject = ['$scope', 'parallaxHelper', '$interval', 'team', '$mdDialog', '$window', 'landingContent', 'landingNav'];
+    LandingController.$inject = ['$scope', 'parallaxHelper', '$interval', 'team', '$mdDialog', '$window', 'landingContent', 'landingNav', '$http'];
 
-    function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window, landingContent, landingNav) {
+    function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window, landingContent, landingNav, $http) {
         var vm = this;
         analytics.track('Arrived on Page', {
             referrer: document.referrer
@@ -48,15 +48,43 @@
 
 
         vm.contact = {
-            name: 'Enter your name',
-            email: 'email@address.com',
-            message: 'What would you like to ask us?'
+            name: '',
+            email: '',
+            message: ''
         }
 
         vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.png', '/landing/landing.img/b-v-s-d-logo.svg'];
 
         vm.contactInfo = team.contactInfo;
+        vm.sendMail = function () {
+            var payload = {
+                name: vm.contact.name,
+                email: vm.contact.email,
+                description: vm.contact.message
+            };
+            //        console.log(payload);
+            $http.post('api/send-mail', payload)
+                .then(function (response) {
+                    var sendResponse = {
+                        title: 'Error',
+                        content: "There was a problem sending your message. Please verify that you have entered a valid email address.",
+                    };
+                    if (response.data.message = 'success')
+                        var sendResponse = {
+                            title: 'Success!',
+                            content: "Your message has been sent successfully.",
+                        }
+                    $mdDialog.show(
+                        $mdDialog.alert()
+                        .clickOutsideToClose(true)
+                        .title(sendResponse.title)
+                        .textContent(sendResponse.content)
+                        .ariaLabel('Alert Dialog')
+                        .ok('ok')
+                    );
 
+                });
+        };
         $interval(play, 5000);
 
         function pause(title) {
