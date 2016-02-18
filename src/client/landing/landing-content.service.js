@@ -17,7 +17,7 @@
             ctaColor: {
                 "background-color": "#fb8e31"
             },
-            image: "/landing/landing.img/orderly-mobile-dashboard.png"
+            image: "/landing/landing.img/mobile-dashboard.png"
         }, {
             index: 1,
             title: 'Managed.',
@@ -28,7 +28,7 @@
             ctaColor: {
                 "background-color": "#44a7f0"
             },
-            image: "/landing/landing.img/orderly-mobile-dashboard.png"
+            image: "/landing/landing.img/mobile-financials.png"
         }, {
             index: 2,
             title: 'Enhanced.',
@@ -39,7 +39,7 @@
             ctaColor: {
                 "background-color": "#19a69b"
             },
-            image: "/landing/landing.img/orderly-mobile-dashboard.png"
+            image: "/landing/landing.img/mobile-dashboard.png"
         }];
 
         service.benefits = [{
