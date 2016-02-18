@@ -85,6 +85,7 @@
         }
 
         function dialog(ev, title, content, ok) {
+            console.log(ev);
             analytics.track('Read Bio', {
                 name: title
             })
@@ -108,7 +109,6 @@
         }
 
         function isActive(item) {
-            console.log(item + "." === vm.scrollItems[0].title)
             return item + "." === vm.scrollItems[0].title;
         }
 

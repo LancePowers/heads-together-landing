@@ -44,12 +44,12 @@
 
         service.benefits = [{
             icon: '/landing/landing.img/create-account-icon.svg',
-            name: 'Collect Your Data',
-            //            text: ''
+            name: 'Gather Your Data',
+            text: 'Start by providing us with some basic information about you, like your name and insurance information. From there, let us do all the hard work of gathering, cleaning, and organizing your data for you. You only have to go through this process once, and we’ll do the rest. You are in complete control over what data we collect on your behalf, and no one will ever see your data except you.'
         }, {
             icon: '/landing/landing.img/collect-icon.svg',
             name: 'Explore Your Information',
-            //            text: ''
+            text: 'Once you’re data has loaded into the dashboard, you can begin to explore your healthcare spending like you never have before. See all your claims laid out in one place and ask questions about specific transactions. Know exactly how much is left on your deductible and where those dollars went. Get a clear picture of all the physicians you’ve seen and why. With Orderly, you can finally begin to understand the costs of healthcare.'
         }, {
             icon: '/landing/landing.img/explore-icon.svg',
             name: 'Empower Your Decisions',
