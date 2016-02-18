@@ -9,7 +9,7 @@
             <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
             <div flex></div>
             <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
-            <md-button ng-href="{{vm.signUp}}" class="menu-cta">sign up free</md-button>
+            <md-button ng-click="vm.alphaDialog($event,'Floating Menu')" class="menu-cta">sign up free</md-button>
         </md-fab-actions>
     </md-toolbar>
 </md-fab-toolbar>
@@ -18,7 +18,7 @@
     <img src="/landing/landing.img/logo.svg" flex="15" />
     <div flex></div>
     <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
-    <md-button ng-href="{{vm.signUp}}" class="menu-cta">sign up free</md-button>
+    <md-button ng-click="vm.alphaDialog($event,'Top menu')" class="menu-cta">sign up free</md-button>
 </div>
 
 <div class="landing-slider" layout="column">
@@ -32,7 +32,7 @@
             <div flex-xs="50" flex-gt-xs="25">
                 <h1>My health. <span class="accent-header" ng-class="vm.animatedClass" ng-style="item.color">{{item.title}}</span></h1>
                 <p class="slide-text" ng-class="vm.animatedClass">{{item.text}}</p>
-                <md-button class="cta-square" ng-style="item.ctaColor" ng-href="{{vm.signUp}}">SIGN UP FREE</md-button>
+                <md-button class="cta-square" ng-style="item.ctaColor" ng-click="vm.alphaDialog($event,'slider')">SIGN UP FREE</md-button>
             </div>
             <div flex></div>
         </div>
@@ -63,7 +63,7 @@
 
 <div layout-xs="column" layout="row" class="benefits">
     <div flex></div>
-    <div flex="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="center center">
+    <div flex="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="start center">
         <img ng-src="{{benefit.icon}}">
         <h3>{{benefit.name}}</h3>
         <p>{{benefit.text || vm.lorem}}</p>
@@ -134,7 +134,7 @@
 <div layout="column" layout-align="center center" class="footer-menu">
     <img src="/landing/landing.img/logo-2.svg" />
     <div flex="15"></div>
-    <md-button class="menu-cta" ng-href="{{vm.signUp}}">SIGN UP FREE</md-button>
+    <md-button class="menu-cta" ng-click="vm.alphaDialog($event,'bottom')">SIGN UP FREE</md-button>
     <div flex="10"></div>
     <div layout="row" layout-align="center center">
         <md-button ng-href="{{vm.signIn}}">sign in<span class="divider">|</span></md-button>

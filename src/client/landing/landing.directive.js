@@ -43,6 +43,7 @@
         vm.menuItems = landingNav.menuItems;
         vm.scrollItems = landingContent.scrollItems;
         vm.benefits = landingContent.benefits;
+        vm.alphaDialog = alphaDialog;
         scrollMenu();
 
 
@@ -82,6 +83,18 @@
                 }
                 $scope.$apply();
             });
+        }
+
+        function alphaDialog(ev, buttonId) {
+            analytics.track('Sign Up Click', {
+                button: buttonId
+            })
+            $mdDialog.show({
+                templateUrl: 'landing/signup-dialog.html',
+                parent: angular.element(document.body),
+                targetEvent: ev,
+                clickOutsideToClose: true
+            })
         }
 
         function dialog(ev, title, content, ok) {

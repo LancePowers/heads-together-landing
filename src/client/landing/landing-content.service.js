@@ -53,7 +53,7 @@
         }, {
             icon: '/landing/landing.img/explore-icon.svg',
             name: 'Empower Your Decisions',
-            //            text: ''
+            text: 'With a complete picture of your healthcare spending you never have to remember whether you submitted a claim for reimbursement or whether you forgot to use money left in your FSA. Orderly will alert you automatically to opportunities to save money or get back money you’ve already spent. The more you use Orderly, the better it gets.'
         }];
 
         return service;

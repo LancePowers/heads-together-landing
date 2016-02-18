@@ -245,7 +245,7 @@ p {
 }
 
 .benefits p {
-    margin: 5px;
+    margin: 10px;
 }
 
 .partners {
@@ -439,4 +439,13 @@ md-dialog {
     font-size: 9px;
     font-weight: 600;
     color: #c8c8c8;
+}
+
+.alpha-dialog {
+    max-width: 500px;
+    padding: 50px;
+}
+
+.alpha-dialog img {
+    width: 48px;
 }
