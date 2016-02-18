@@ -11,14 +11,14 @@
         }, {
             display: 'contact',
             href: '#contact'
-        },  {
+        }, {
+            display: 'blog',
+            href: 'http://thisis.orderlyhealth.com/'
+        }, {
             display: 'sign in',
             href: 'https://welcome.orderlyhealth.com/users/sign_in'
         }];
-//        {
-    //            display: 'blog',
-    //            href: ''
-    //        },
+
         return service;
     }
 })()
