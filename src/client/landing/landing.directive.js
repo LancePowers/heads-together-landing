@@ -53,7 +53,19 @@
             message: ''
         }
 
-        vm.partners = ['/landing/landing.img/j-d-r-f-logo.svg', '/landing/landing.img/good-rx-logo.png', '/landing/landing.img/b-v-s-d-logo.svg'];
+        vm.partners = [{
+            image: '/landing/landing.img/techstars-logo.svg',
+            url: 'http://www.techstars.com/'
+        }, {
+            image: '/landing/landing.img/j-d-r-f-logo.svg',
+            url: 'http://diabetesfoundation.jdrf.com/info/jdrf/'
+        }, {
+            image: '/landing/landing.img/good-rx-logo.png',
+            url: 'http://www.goodrx.com/'
+        }, {
+            image: '/landing/landing.img/b-v-s-d-logo.svg',
+            url: 'http://www.bvsd.k12.co.us/pages/home.aspx'
+        }];
 
         vm.contactInfo = team.contactInfo;
         vm.sendMail = function () {
@@ -85,7 +97,7 @@
 
                 });
         };
-        $interval(play, 5000);
+        $interval(play, 7000);
 
         function pause(title) {
             console.log($window)

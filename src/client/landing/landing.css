@@ -265,6 +265,10 @@ p {
     color: #ffffff;
 }
 
+.partners .foreground img {
+    margin: 20px;
+}
+
 .partners .parallax {
     margin-top: -300px;
     z-index: -2;

@@ -77,7 +77,7 @@
         <h3>WE WORK WITH THE BEST</h3>
         <md-divider></md-divider>
         <div layout="row" layout-align="center center">
-            <img flex="25" flex-offset="5" ng-repeat="partner in vm.partners" ng-src="{{partner}}">
+            <img flex="15" ng-repeat="partner in vm.partners" ng-src="{{partner.image}}" ng-href={{partner.url}}>
         </div>
     </div>
 </div>
