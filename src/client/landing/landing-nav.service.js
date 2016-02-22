@@ -16,7 +16,7 @@
             href: 'http://thisis.orderlyhealth.com/'
         }, {
             display: 'sign in',
-            href: 'https://welcome.orderlyhealth.com/users/sign_in'
+            href: 'https://welcome.orderlytest.com/users/sign_in'
         }];
 
         return service;
