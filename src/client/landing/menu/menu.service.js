@@ -8,20 +8,22 @@
     Components are combined as an array of menu items below.  
     */
 
+    var domain = 'orderlytest';
+
     function menu() {
         var service = {};
 
         var signIn = {
             title: 'Sign In',
-            value: 'https://welcome.orderlyhealth.com/users/sign_in'
+            value: 'https://welcome.' + domain + '.com/users/sign_in'
         };
         var signUp = {
             title: 'Sign Up',
-            value: 'https://welcome.orderlyhealth.com/users/sign_up'
+            value: 'https://welcome.' + domain + '.com/users/sign_up'
         };
         var blog = {
             title: 'Blog',
-            value: 'http://thisis.orderlyhealth.com/'
+            value: 'http://thisis.' + domain + '.com/'
         };
         var press = {
             title: 'Press',
@@ -46,11 +48,11 @@
         };
         var terms = {
             title: 'Terms of Service',
-            value: "https://www.welcome.orderlyhealth.com/legal"
+            value: 'https://www.welcome.' + domain + '.com/legal'
         };
         var policy = {
             title: 'Privacy Policy',
-            value: "https://www.welcome.orderlyhealth.com/privacy"
+            value: 'https://www.welcome.' + domain + '.com/privacy'
         };
 
         service.header = {
