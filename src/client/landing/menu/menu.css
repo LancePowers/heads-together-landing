@@ -1,0 +1,10 @@
+.header-menu {
+    padding: 0px;
+    margin: 0px;
+    max-height: 25px;
+}
+
+.nav-menu .md-button {
+    padding: 0px !important;
+    margin: 0px !important;
+}

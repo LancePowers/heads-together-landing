@@ -49,7 +49,7 @@
         }, {
             icon: '/landing/landing.img/collect-icon.svg',
             name: 'Explore Your Information',
-            text: 'Once you’re data has loaded into the dashboard, you can begin to explore your healthcare spending like you never have before. See all your claims laid out in one place and ask questions about specific transactions. Know exactly how much is left on your deductible and where those dollars went. Get a clear picture of all the physicians you’ve seen and why. With Orderly, you can finally begin to understand the costs of healthcare.'
+            text: 'Once your data has loaded into the dashboard, you can begin to explore your healthcare spending like you never have before. See all your claims laid out in one place and ask questions about specific transactions. Know exactly how much is left on your deductible and where those dollars went. Get a clear picture of all the physicians you’ve seen and why. With Orderly, you can finally begin to understand the costs of healthcare.'
         }, {
             icon: '/landing/landing.img/explore-icon.svg',
             name: 'Empower Your Decisions',

@@ -21,15 +21,14 @@
     }
 
 
-    LandingController.$inject = ['$scope', 'parallaxHelper', '$interval', 'team', '$mdDialog', '$window', 'landingContent', 'landingNav', '$http'];
+    LandingController.$inject = ['$scope', 'parallaxHelper', '$interval', 'team', '$mdDialog', '$window', 'landingContent', '$http'];
 
-    function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window, landingContent, landingNav, $http) {
+    function LandingController($scope, parallaxHelper, $interval, team, $mdDialog, $window, landingContent, $http) {
         var vm = this;
         analytics.track('Arrived on Page', {
             referrer: document.referrer
         })
         vm.index = 0;
-        vm.signUp = 'https://welcome.orderlyhealth.com/users/sign_up';
         vm.signIn = 'https://welcome.orderlyhealth.com/users/sign_in';
         vm.isPlaying = true;
         vm.isOpenMenu = false;
@@ -40,11 +39,10 @@
         vm.pause = pause;
         vm.dialog = dialog;
         vm.teamMembers = team.teamMembers;
-        vm.menuItems = landingNav.menuItems;
         vm.scrollItems = landingContent.scrollItems;
         vm.benefits = landingContent.benefits;
         vm.alphaDialog = alphaDialog;
-        scrollMenu();
+
 
 
         vm.contact = {
@@ -112,18 +110,6 @@
                 }
             })
         };
-
-        function scrollMenu() {
-            angular.element($window).bind("scroll", function () {
-                if (this.pageYOffset >= 50) {
-                    vm.isScrolled = true;
-                    console.log(vm.isScrolled)
-                } else {
-                    vm.isScrolled = false;
-                }
-                $scope.$apply();
-            });
-        }
 
         function alphaDialog(ev, buttonId) {
             analytics.track('Sign Up Click', {

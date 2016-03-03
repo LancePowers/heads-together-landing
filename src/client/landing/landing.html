@@ -1,26 +1,5 @@
-<md-fab-toolbar class="scroll-menu" md-open="vm.isOpenMenu" hide-xs ng-show="vm.isScrolled">
-    <md-fab-trigger class="fab-trigger">
-        <md-button aria-label="menu" class="md-fab">
-            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
-        </md-button>
-    </md-fab-trigger>
-    <md-toolbar>
-        <md-fab-actions ng-class="{'md-toolbar-tools': vm.isOpenMenu}">
-            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
-            <div flex></div>
-            <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
-            <md-button ng-click="vm.alphaDialog($event,'Floating Menu')" class="menu-cta">sign up free</md-button>
-        </md-fab-actions>
-    </md-toolbar>
-</md-fab-toolbar>
-
-<div layout="row" class="top-menu" layout-align="center center">
-    <img src="/landing/landing.img/logo.svg" flex="15" />
-    <div flex></div>
-    <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
-    <md-button ng-click="vm.alphaDialog($event,'Top menu')" class="menu-cta">sign up free</md-button>
-</div>
-
+<menu class="fixed-menu"></menu>
+<div class="header-offset"></div>
 <div class="landing-slider" layout="column">
     <div layout="row" ng-repeat="item in vm.scrollItems | limitTo:1">
         <div class="phone-display" flex="30" flex-offset="20" layout-align="center center">
