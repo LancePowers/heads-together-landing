@@ -29,7 +29,6 @@
             referrer: document.referrer
         })
         vm.index = 0;
-        vm.signIn = 'https://welcome.orderlyhealth.com/users/sign_in';
         vm.isPlaying = true;
         vm.isOpenMenu = false;
         vm.isScrolled = false;
