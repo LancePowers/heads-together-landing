@@ -2,10 +2,10 @@
     'use strict'
     angular.module('app')
         .factory('menu', menu);
-    /*  
-    // *** Menu Service *** // 
-    Menu components are defined at the beginning of the service. 
-    Components are combined as an array of menu items below.  
+    /*
+    // *** Menu Service *** //
+    Menu components are defined at the beginning of the service.
+    Components are combined as an array of menu items below.
     */
 
     var domain = 'orderlytest';
@@ -48,11 +48,11 @@
         };
         var terms = {
             title: 'Terms of Service',
-            value: 'https://www.welcome.' + domain + '.com/legal'
+            value: 'https://welcome.' + domain + '.com/legal'
         };
         var policy = {
             title: 'Privacy Policy',
-            value: 'https://www.welcome.' + domain + '.com/privacy'
+            value: 'https://welcome.' + domain + '.com/privacy'
         };
 
         service.header = {
