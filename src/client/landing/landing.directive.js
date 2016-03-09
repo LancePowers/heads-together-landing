@@ -41,7 +41,7 @@
         vm.scrollItems = landingContent.scrollItems;
         vm.benefits = landingContent.benefits;
         vm.alphaDialog = alphaDialog;
-
+        vm.link = link;
 
 
         vm.contact = {
@@ -64,6 +64,11 @@
             url: 'http://www.bvsd.k12.co.us/pages/home.aspx'
         }];
 
+        function link(url) {
+            if (url) {
+                $window.location.href = url;
+            }
+        }
         vm.contactInfo = team.contactInfo;
         vm.sendMail = function () {
             var payload = {

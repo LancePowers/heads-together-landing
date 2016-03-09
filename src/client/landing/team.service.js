@@ -14,10 +14,12 @@
             icon: '/landing/landing.img/phone.svg'
         }, {
             value: 'info@orderlyhealth.com',
-            icon: '/landing/landing.img/mail.svg'
+            icon: '/landing/landing.img/mail.svg',
+            url: 'mailto:info@orderlyhealth.com'
         }, {
             value: '@orderlyhealth',
-            icon: '/landing/landing.img/twitter.svg'
+            icon: '/landing/landing.img/twitter.svg',
+            url: 'https://twitter.com/OrderlyHealth'
         }];
 
         service.teamMembers = [{

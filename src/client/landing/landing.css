@@ -425,6 +425,8 @@ md-dialog {
 .footer-menu .menu-cta {
     width: 199px;
     height: 50px;
+    background-color: var(--dark-sky-blue);
+    background-color: #44a7f0;
 }
 
 .footer-menu .menu-cta span {
