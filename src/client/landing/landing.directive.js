@@ -94,7 +94,7 @@
 
                 });
         };
-        $interval(play, 7000);
+        $interval(play, 10000);
 
         function pause(title) {
             console.log($window)
