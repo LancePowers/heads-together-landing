@@ -1,34 +1,16 @@
-<!--  FLOATING MENU
-<md-fab-toolbar class="scroll-menu" md-open="vm.isOpenMenu" hide-xs ng-show="vm.isScrolled">
-    <md-fab-trigger class="fab-trigger">
-        <md-button aria-label="menu" class="md-fab">
-            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
-        </md-button>
-    </md-fab-trigger>
-    <md-toolbar>
-        <md-fab-actions ng-class="{'md-toolbar-tools': vm.isOpenMenu}">
-            <md-icon md-svg-src="/landing/landing.img/Orderly_mark.svg"></md-icon>
-            <div flex></div>
-            <md-button ng-repeat="item in vm.menuItems" ng-href="{{item.href}}" class="menu-item">{{item.display}}</md-button>
-            <md-button ng-click="vm.alphaDialog($event,'Floating Menu')" class="menu-cta">sign up free</md-button>
-        </md-fab-actions>
-    </md-toolbar>
-</md-fab-toolbar>
--->
-
 <div layout="row" class="header-menu">
-    <img src="/landing/landing.img/logo.svg" flex="15" />
-    <div flex></div>
-    <div flex="45">
-        <md-menu class="nav-menu" ng-repeat="item in vm.menuItems track by $index">
-            <md-button ng-click="vm.redirect(item.value) || $mdOpenMenu($event)">{{item.title}}</md-button>
-            <md-menu-content layout="column">
-                <md-menu-item ng-repeat="subItem in item.value track by $index">
-                    <md-button ng-href="{{subItem.value}}">{{subItem.title}}</md-button>
-                </md-menu-item>
-            </md-menu-content>
-
-        </md-menu>
-        <md-button ng-click="vm.alphaDialog($event,'Top menu')" class="menu-cta" ng-if="!vm.isScrolled">sign up free</md-button>
-    </div>
+	<img src="/landing/landing.img/logo.svg" flex="15" />
+	<div flex></div>
+	<div flex="45">
+		<md-menu class="nav-menu" ng-repeat="item in vm.menuItems track by $index">
+			<md-button ng-click="vm.redirect(item.value) || $mdOpenMenu($event)">{{item.title}}</md-button>
+			<md-menu-content layout="column">
+				<md-menu-item ng-repeat="subItem in item.value track by $index">
+					<md-button ng-href="{{subItem.value}}">{{subItem.title}}</md-button>
+				</md-menu-item>
+			</md-menu-content>
+		</md-menu>
+		<md-button ng-click="vm.alphaDialog($event,'Top menu')" class="menu-cta" ng-if="!vm.isScrolled">sign up free</md-button>
+		<md-button ng-click="vm.alphaDialog($event,'Top menu')" ng-if="vm.isScrolled">sign up</md-button>
+	</div>
 </div>

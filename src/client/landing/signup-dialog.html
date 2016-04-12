@@ -1,10 +1,32 @@
 <md-dialog aria-label="onboarding" layout-align="center center" ng-cloak class="alpha-dialog">
 
-    <section layout="column" layout-align="center center" layout-padding class="onboarding">
-        <img src="/landing/landing.img/Orderly_mark.svg" />
-        <h3>Welcome to Orderly Health's Alpha Release!</h3>
-        <p>Congratulations on taking the first step on your way to a more informed, empowered way of handling your health. We need to collect some basic information and get permission to access your insurance data. Don't worry, your data will be kept secure and confidential throughout the entire process.</p>
-        <md-button href="https://welcome.orderlyhealth.com/users/sign_up">Get Started</md-button>
-    </section>
+	<section layout="column" layout-align="center center" layout-padding class="onboarding">
+		<img src="/landing/landing.img/Orderly_mark.svg" />
+		<h3>Welcome to Orderly Health's Alpha Release!</h3>
+		<p>Congratulations on taking the first step on your way to a more informed, empowered way of handling your health. Orderly's alpha release is currently closed, but we'd love to hear from you! Please let us know if you have any questions or would like to stay in the loop for future developments.</p>
+		<div layout="row" layout-align="center start" class="contact-dialog" id="contact">
+			<div layout="column" class="message">
+				<h2>SEND US A MESSAGE</h2>
+				<md-input-container>
+					<label>Name</label>
+					<input ng-model="vm.contact.name">
+				</md-input-container>
+				<md-input-container>
+					<label>Email</label>
+					<input ng-model="vm.contact.email" type="email">
+				</md-input-container>
+				<md-input-container>
+					<label>Phone</label>
+					<input ng-model="vm.contact.phone">
+				</md-input-container>
+				<md-input-container>
+					<label>Share your thoughts</label>
+					<input ng-model="vm.contact.message">
+				</md-input-container>
+				<md-button class="menu-cta" ng-click="vm.sendMail($event)">Submit</md-button>
+			</div>
+		</div>
+
+	</section>
 
 </md-dialog>
