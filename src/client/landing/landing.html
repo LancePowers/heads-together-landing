@@ -2,12 +2,12 @@
 <div class="header-offset"></div>
 <div class="landing-slider" layout="column">
 	<div layout="row" ng-repeat="item in vm.scrollItems | limitTo:1">
-		<div class="phone-display" flex="30" flex-offset="20" layout-align="center center">
-			<img class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector@2x.png" />
+		<div hide show-gt-md class="phone-display" flex="10" flex-gt-md="30" flex-offset="20" layout-align="center center">
+			<img  class="i-phone-6-white-gold-vector" src="/landing/landing.img/i-phone-6-white-gold-vector@2x.png" />
 			<img class="orderly-mobile-dashboard" ng-src="{{item.image}}" ng-class="vm.animatedClass" />
 		</div>
-		<div flex="45" layout="column">
-			<div hide-xs flex="10"></div>
+		<div flex="100" flex-gt-md="45" layout="column" layout-align="center center">
+			<div hide show-gt-md flex="10"></div>
 			<div flex-xs="50" flex-gt-xs="25">
 				<h1>My health. <span class="accent-header" ng-class="vm.animatedClass" ng-style="item.color">{{item.title}}</span></h1>
 				<p class="slide-text" ng-class="vm.animatedClass">{{item.text}}</p>
@@ -17,7 +17,7 @@
 		</div>
 		<div flex="10"></div>
 	</div>
-	<div layout="row" class="slider-nav">
+	<div hide show-gt-md layout="row" class="slider-nav">
 		<md-toolbar layout-align="center center">
 			<div class="nav-items">
 				<md-button ng-repeat="item in vm.navItems" class="button" ng-class="{'active': vm.isActive(item)}" aria-label="Settings" ng-click="vm.pause(item)">
@@ -28,10 +28,10 @@
 	</div>
 </div>
 
-<div hide-xs class="parallax-wrap" id="features">
+<div hide show-gt-md class="parallax-wrap" id="features">
 	<div class="mac-display white-gradient" layout="column" layout-align="center center">
 		<h1 class="accent-header">How It works</h1>
-		<div class="wrap" layout="row" layout-align="start start">
+		<div hide show-gt-md class="wrap" layout="row" layout-align="start start">
 			<img class="frame" src="/landing/landing.img/Thunderbolt@1x.png">
 			<img class="screen" src="/landing/landing.img/orderly-dashboard-v-2.png" alt="screen" />
 		</div>
@@ -40,14 +40,15 @@
 	<img src="/landing/landing.img/mountainColor.jpg" alt="" class="parallax" du-parallax y="vm.background" />
 </div>
 
-<div layout-xs="column" layout="row" class="benefits">
-	<div flex></div>
-	<div flex="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="start center">
+<div layout="column" layout-gt-md="row" class="benefits">
+	<div flex hide show-gt-md></div>
+	<h3 hide-gt-md class="accent-header-sm">How It works</h3>
+	<div flex="100" flex-gt-md="25" layout="column" class="benefit" ng-repeat="benefit in vm.benefits" layout-align="start center">
 		<img ng-src="{{benefit.icon}}">
 		<h3>{{benefit.name}}</h3>
 		<p>{{benefit.text || vm.lorem}}</p>
 	</div>
-	<div flex></div>
+	<div flex hide show-gt-md></div>
 </div>
 <div class="partners">
 	<div class="color-filter"></div>
@@ -65,9 +66,9 @@
 	<div layout="column" layout-align="center center">
 		<h3>About Orderly</h3>
 		<md-divider></md-divider>
-		<div layout="row" layout-align="center center" class="members">
+		<div layout="column" layout-gt-md="row" layout-align="center center" class="members">
 			<div flex="10"></div>
-			<div flex="20" layout="column" ng-repeat="member in vm.teamMembers" layout-align="center center">
+			<div flex="100" flex-gt-md="20" layout="column" ng-repeat="member in vm.teamMembers" layout-align="center center">
 				<img ng-src="{{member.image}}">
 				<h4>{{member.name}}</h4>
 				<p>{{member.title}}</p>
@@ -78,7 +79,7 @@
 	</div>
 </div>
 
-<div layout="row" layout-align="center start" class="contact" id="contact">
+<div layout="column" layout-gt-md="row" layout-align="center start" class="contact" id="contact">
 	<div flex="5"></div>
 	<div layout="column" flex="25" class="message">
 		<h2>SEND US A MESSAGE</h2>

@@ -1,7 +1,7 @@
 <div layout="row" class="header-menu">
-	<img src="/landing/landing.img/logo.svg" flex="15" />
-	<div flex></div>
-	<div flex="45">
+	<img src="/landing/landing.img/logo.svg" class="logo" margin flex="25" />
+	<div hide show-gt-md flex></div>
+	<div flex="80" flex-gt-md="45">
 		<md-menu class="nav-menu" ng-repeat="item in vm.menuItems track by $index">
 			<md-button ng-click="vm.redirect(item.value) || $mdOpenMenu($event)">{{item.title}}</md-button>
 			<md-menu-content layout="column">

@@ -1,14 +1,18 @@
 .header-menu {
-    padding: 0px;
-    margin: 0px;
-    max-height: 25px;
+	padding: 0px;
+	margin: 0px;
+	max-height: 40px;
 }
 
 .nav-menu .md-button {
-    padding: 0px !important;
-    margin: 0px !important;
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
-.header-menu img {
-    max-height: 25px !important;
+.logo{
+  height: 40px;
+}
+
+.fixed-menu{
+	background-color: rgba(255,255,255,.8);
 }

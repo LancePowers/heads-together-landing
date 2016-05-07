@@ -25,6 +25,11 @@ p {
 	font-weight: 600;
 }
 
+.accent-header-sm {
+	font-weight: 300;
+	text-align: center;
+}
+
 .i-phone-6-white-gold-vector {
 	position: absolute;
 }
